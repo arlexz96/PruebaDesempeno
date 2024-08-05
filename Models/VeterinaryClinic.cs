@@ -39,7 +39,7 @@ public class VeterinaryClinic
   {
     int Id, opt;
     ShowAnimals("Dog");
-    Console.WriteLine("Seleccione el id del animal que desea eliminar");
+    Console.WriteLine("Seleccione el id del animal que desea actualizar");
     Id = Convert.ToInt32(Console.ReadLine());
     foreach (var dog in Dogs)
     {
@@ -130,12 +130,15 @@ Voumen de pelo: {dog.BarkVolume}
       }
       break;
     }
+    Console.WriteLine("Animal Actualizado Con Exito");
+    Console.WriteLine("\nPresione cualquier tecla para continuar...");
+    Console.ReadKey();
   }
   public void UpdateCat()
   {
     int Id, opt;
     ShowAnimals("Cat");
-    Console.WriteLine("Seleccione el id del animal que desea eliminar");
+    Console.WriteLine("Seleccione el id del animal que desea actualizar");
     Id = Convert.ToInt32(Console.ReadLine());
     foreach (var catinfo in Cats)
     {
@@ -212,7 +215,9 @@ Voumen de pelo: {catinfo.FurLength}
       }
       break;
     }
-    ShowAnimals("Cat");
+    Console.WriteLine("Animal Actualizado Con Exito");
+    Console.WriteLine("\nPresione cualquier tecla para continuar...");
+    Console.ReadKey();
   }
   public void DeleteDog()
   {
